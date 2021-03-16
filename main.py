@@ -143,6 +143,12 @@ class MediaAssetResponseModel(BaseMediaAssetModel):
     Response model for Media Asset model.
     """
 
+    licenseValidFrom: datetime
+    licenseValidUntil: datetime
+    sourceUrl: str
+    sourceUrlValidFrom: datetime
+    sourceUrlValidUntil: datetime
+
 
 class MediaAssetDeleteModel(BaseModel):
     """
